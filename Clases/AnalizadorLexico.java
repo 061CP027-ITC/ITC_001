@@ -26,7 +26,7 @@ public class AnalizadorLexico {
         listaTokens.clear();
         try {
             JFileChooser chooser = new JFileChooser();
-            FileNameExtensionFilter filtro = new FileNameExtensionFilter("Archivos de texto (*.txt)", "txt");
+            FileNameExtensionFilter filtro = new FileNameExtensionFilter("Archivos de texto (*.txt, *.java)", "txt", "java");
             chooser.setFileFilter(filtro);
             chooser.setAcceptAllFileFilterUsed(false);
             int opcion = chooser.showOpenDialog(null);
